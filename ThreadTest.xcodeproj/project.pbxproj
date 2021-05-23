@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C10DD212659F340009182E7 /* ThreadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C10DD202659F340009182E7 /* ThreadManager.swift */; };
 		8C45BBC12655502D00685FAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45BBC02655502D00685FAE /* AppDelegate.swift */; };
 		8C45BBC32655502D00685FAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45BBC22655502D00685FAE /* SceneDelegate.swift */; };
 		8C45BBC52655502D00685FAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45BBC42655502D00685FAE /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 		8C45BBD02655502F00685FAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C45BBCE2655502F00685FAE /* LaunchScreen.storyboard */; };
 		8C45BBDB2655502F00685FAE /* ThreadTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45BBDA2655502F00685FAE /* ThreadTestTests.swift */; };
 		8C45BBE62655502F00685FAE /* ThreadTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C45BBE52655502F00685FAE /* ThreadTestUITests.swift */; };
+		8C5F0037265A21100030D586 /* XSThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5F0036265A21100030D586 /* XSThread.swift */; };
+		8C5F003C265A21270030D586 /* XSThreadProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5F003B265A21270030D586 /* XSThreadProtocol.swift */; };
+		8C5F0041265A2FE40030D586 /* XSThreadQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5F0040265A2FE40030D586 /* XSThreadQueue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C10DD202659F340009182E7 /* ThreadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadManager.swift; sourceTree = "<group>"; };
 		8C45BBBD2655502D00685FAE /* ThreadTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C45BBC02655502D00685FAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C45BBC22655502D00685FAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +56,9 @@
 		8C45BBE12655502F00685FAE /* ThreadTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreadTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C45BBE52655502F00685FAE /* ThreadTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadTestUITests.swift; sourceTree = "<group>"; };
 		8C45BBE72655502F00685FAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C5F0036265A21100030D586 /* XSThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSThread.swift; sourceTree = "<group>"; };
+		8C5F003B265A21270030D586 /* XSThreadProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSThreadProtocol.swift; sourceTree = "<group>"; };
+		8C5F0040265A2FE40030D586 /* XSThreadQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSThreadQueue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,10 @@
 				8C45BBCE2655502F00685FAE /* LaunchScreen.storyboard */,
 				8C45BBD12655502F00685FAE /* Info.plist */,
 				8C45BBC92655502D00685FAE /* ThreadTest.xcdatamodeld */,
+				8C10DD202659F340009182E7 /* ThreadManager.swift */,
+				8C5F0036265A21100030D586 /* XSThread.swift */,
+				8C5F003B265A21270030D586 /* XSThreadProtocol.swift */,
+				8C5F0040265A2FE40030D586 /* XSThreadQueue.swift */,
 			);
 			path = ThreadTest;
 			sourceTree = "<group>";
@@ -261,9 +273,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C5F0037265A21100030D586 /* XSThread.swift in Sources */,
 				8C45BBC52655502D00685FAE /* ViewController.swift in Sources */,
+				8C5F003C265A21270030D586 /* XSThreadProtocol.swift in Sources */,
 				8C45BBC12655502D00685FAE /* AppDelegate.swift in Sources */,
 				8C45BBC32655502D00685FAE /* SceneDelegate.swift in Sources */,
+				8C10DD212659F340009182E7 /* ThreadManager.swift in Sources */,
+				8C5F0041265A2FE40030D586 /* XSThreadQueue.swift in Sources */,
 				8C45BBCB2655502D00685FAE /* ThreadTest.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
